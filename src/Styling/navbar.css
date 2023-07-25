@@ -1,0 +1,26 @@
+.user-img
+{
+    margin-bottom: 10px;
+}
+
+.nav-item
+{
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.user-name{
+    height: 10px;
+}
+
+.btn 
+{
+    margin-right: 5px ;
+}
+.navbar
+{
+    background-color: gray;
+}

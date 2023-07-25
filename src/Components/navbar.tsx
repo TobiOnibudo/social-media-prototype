@@ -12,20 +12,20 @@ export function NavBar()
         await signOut(auth); 
     }
 
-    return <div className="navbar">
-        <div className="links">
-        <Link to = "/"> Home</Link>
-        {!user ? <Link to = "/login"> Login</Link> :
-        <Link to = "/createpost">  Create Post</Link>
+    return <div className="navbar   bg-body-tertiaryry secondary">
+        <div className="links ">
+        <Link className = "nav-item" to = "/"> Home</Link>
+        {!user ? <Link className ="nav-item" to = "/login"> Login</Link> :
+        <Link className = "nav-item" to = "/createpost">  Create Post</Link>
         }
         </div>
         <div className="user">
             {user &&
             (
             <>
-            <p> {user?.displayName }</p>
-            <img src= {user?.photoURL || ""} width="20" height="20"/>
-            <button onClick = {signUserOut}> Log Out </button>
+            <img className = {"user-img"}src= {user?.photoURL || ""} width="30" height="30"/>
+            {/* <p className="user-name"> {user?.displayName }</p> */}
+            <p><button className="btn btn-light" onClick = {signUserOut}> Log Out </button></p>
             </>
 )}
         </div>
